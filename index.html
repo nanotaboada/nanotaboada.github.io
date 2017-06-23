@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Nano Taboada</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        
+        .carousel,
+        .item,
+        .active {
+            height: 100%;
+        }
+        
+        .carousel-inner {
+            height: 100%;
+        }
+        
+        .fill {
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+        }
+        
+        footer {
+            margin: 50px 0;
+        }
+        
+        nav {
+            opacity: 0.7;
+        }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-links">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Nano Taboada</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-links">
+                <ul class="nav navbar-nav">
+                    <!-- TODO: Add Bio, Works and Contact sections -->
+                    <!--
+                    <li>
+                        <a href="#">Bio</a>
+                    </li>
+                    <li>
+                        <a href="#">Trabajos</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                    -->
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <header id="artworkCarousel" class="carousel slide">
+
+        <ol class="carousel-indicators">
+            <li data-target="#artworkCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#artworkCarousel" data-slide-to="1"></li>
+            <li data-target="#artworkCarousel" data-slide-to="2"></li>
+            <li data-target="#artworkCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/taller-guillermo-roux-detalle-retrato-oleo-1900x1080.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>"Victoria" (Detalle). Óleo sobre tela.</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/taller-iuna-cecchi-noce-detalle-retrato-oleo-1900x1080.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>"Sin Título" (Detalle). Óleo sobre tela.</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/anna-rank-taller-detalle-retrato-oleo-1900x1080.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>"Marbella" (Detalle). Óleo sobre tela.</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/taller-guillermo-roux-detalle-retrato-pastel-oleo-1900x1080.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>"Sin Título" (Detalle). Pastel óleo sobre tela.</h2>
+                </div>
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#artworkCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#artworkCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+    <div class="container">
+        <!-- TODO: Add Bio, Works and Contact sections -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin=" anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
+
+    <script>
+        $('.carousel').carousel({
+            interval: 4000
+        })
+
+        $(document).keydown(function(e) {
+            if (e.keyCode === 37) {
+                // Previous
+                $(".carousel-control.left").click();
+                return false;
+            }
+            if (e.keyCode === 39) {
+                // Next
+                $(".carousel-control.right").click();
+                return false;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
