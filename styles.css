@@ -17,26 +17,26 @@ body {
     font-size: 8vw;
 }
 
-.fa {
+.fab {
     color: #eee;
     margin-left: 0.25em;
     margin-right: 0.25em;
 }
 
-.fa-instagram:hover {
-    color: #c13584;
+.fa-github:hover {
+    color: #A364DA;
 }
 
-.fa-pinterest:hover {
-    color: #bd081c;
+.fa-linkedin-in:hover {
+    color: #0C66C2;
 }
 
-.fa-facebook:hover {
-    color: #3b5998;
+.fa-spotify:hover {
+    color: #1AD760;
 }
 
-.fa-twitter:hover {
-    color: #1da1f2;
+.fa-tiktok:hover {
+    color: #25EBE7;
 }
 
 #social-links {
