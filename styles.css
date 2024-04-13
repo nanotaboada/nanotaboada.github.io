@@ -21,6 +21,12 @@ body {
     color: #eee;
     margin-left: 0.25em;
     margin-right: 0.25em;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.fab:hover {
+    filter: grayscale(0%);
 }
 
 .fa-github:hover {
