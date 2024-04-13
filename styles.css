@@ -17,8 +17,12 @@ body {
     font-size: 8vw;
 }
 
+#social-links {
+    margin-top: 4em;
+}
+
 .fab {
-    color: #eee;
+    color: whitesmoke;
     margin-left: 0.25em;
     margin-right: 0.25em;
     filter: grayscale(100%);
@@ -29,22 +33,22 @@ body {
     filter: grayscale(0%);
 }
 
-.fa-github:hover {
-    color: #a364da;
+.fa-youtube:hover {
+    color: #ff0100;
 }
 
-.fa-linkedin-in:hover {
-    color: #0c66c2;
-}
-
-.fa-spotify:hover {
-    color: #1ad760;
+.fa-twitch:hover {
+    color: #9147ff;
 }
 
 .fa-tiktok:hover {
     color: #25ebe7;
 }
 
-#social-links {
-    margin-top: 1em;
+.fa-discord:hover {
+    color: #5864f2;
+}
+
+.fa-spotify:hover {
+    color: #1ad760;
 }
