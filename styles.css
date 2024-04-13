@@ -1,8 +1,8 @@
 html,
 body {
     height: 100%;
+    background: url("background.jpg") no-repeat center center fixed;
     background-color: black;
-    background: url('background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -24,19 +24,19 @@ body {
 }
 
 .fa-github:hover {
-    color: #A364DA;
+    color: #a364da;
 }
 
 .fa-linkedin-in:hover {
-    color: #0C66C2;
+    color: #0c66c2;
 }
 
 .fa-spotify:hover {
-    color: #1AD760;
+    color: #1ad760;
 }
 
 .fa-tiktok:hover {
-    color: #25EBE7;
+    color: #25ebe7;
 }
 
 #social-links {
