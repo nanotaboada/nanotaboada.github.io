@@ -19,17 +19,24 @@ body {
 
 #social-links {
     position: absolute; /* Position the social links absolutely within the container */
-    bottom: 1em; /* Adjust the distance from the bottom as needed */
+    bottom: 0.5em; /* Adjust the distance from the bottom as needed */
     left: 50%; /* Position horizontally at the center */
     transform: translateX(-50%); /* Center horizontally */
+    display: flex; /* Ensure the social links are displayed as a flex container */
+    justify-content: center; /* Center the social links horizontally */
 }
 
 .fab {
-    color: whitesmoke;
-    margin-left: 0.25em;
-    margin-right: 0.25em;
-    filter: grayscale(100%);
-    transition: all 0.3s ease-in-out;
+    color: whitesmoke; /* Set the default color of the icons */
+    filter: grayscale(
+        100%
+    ); /* Apply grayscale filter to make icons appear grayed out */
+    transition: all 0.3s ease-in-out; /* Apply smooth transition to all properties over 0.3 seconds with ease-in-out timing function */
+}
+
+#social-links .fab {
+    margin: 0 0.5em; /* Adjust margin between icons horizontally */
+    display: inline-block; /* Ensure icons are displayed in a line */
 }
 
 .fab:hover {
