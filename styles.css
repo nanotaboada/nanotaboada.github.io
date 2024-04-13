@@ -18,7 +18,10 @@ body {
 }
 
 #social-links {
-    margin-top: 4em;
+    position: absolute; /* Position the social links absolutely within the container */
+    bottom: 1em; /* Adjust the distance from the bottom as needed */
+    left: 50%; /* Position horizontally at the center */
+    transform: translateX(-50%); /* Center horizontally */
 }
 
 .fab {
