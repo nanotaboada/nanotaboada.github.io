@@ -18,25 +18,35 @@ body {
 }
 
 #social-links {
-    position: absolute; /* Position the social links absolutely within the container */
-    bottom: 0.5em; /* Adjust the distance from the bottom as needed */
-    left: 50%; /* Position horizontally at the center */
-    transform: translateX(-50%); /* Center horizontally */
-    display: flex; /* Ensure the social links are displayed as a flex container */
-    justify-content: center; /* Center the social links horizontally */
+    /* Position the social links absolutely within the container */
+    position: absolute;
+    /* Adjust the distance from the bottom as needed */
+    bottom: 0.5em;
+    /* Position horizontally at the center */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Ensure the social links are displayed as a flex container */
+    display: flex;
+    /* Center the social links horizontally */
+    justify-content: center;
+
 }
 
 .fab {
-    color: whitesmoke; /* Set the default color of the icons */
-    filter: grayscale(
-        100%
-    ); /* Apply grayscale filter to make icons appear grayed out */
-    transition: all 0.3s ease-in-out; /* Apply smooth transition to all properties over 0.3 seconds with ease-in-out timing function */
+    /* Set the default color of the icons */
+    color: whitesmoke;
+    /* Apply grayscale filter to make icons appear grayed out */
+    filter: grayscale(100%);
+    /* Apply smooth transition to all properties over 0.3 seconds with ease-in-out timing function */
+    transition: all 0.3s ease-in-out;
 }
 
 #social-links .fab {
-    margin: 0 0.5em; /* Adjust margin between icons horizontally */
-    display: inline-block; /* Ensure icons are displayed in a line */
+    /* Adjust margin between icons horizontally */
+    margin: 0 0.5em;
+    /* Ensure icons are displayed in a line */
+    display: inline-block;
 }
 
 .fab:hover {
